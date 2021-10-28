@@ -1,0 +1,136 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo{./profile.png}
+\name{Jonathan}{Schoreels}
+
+\position{Software Engineer{\enskip\cdotp\enskip}Computer Scientist{\enskip\cdotp\enskip}Technical Architecture Enthusiastic}
+
+\mobile{(+32) 474/64.12.88}
+\email{jonathan.schoreels@gmail.com}
+% \homepage{www.posquit0.com}
+\github{JSchoreels}
+\linkedin{jonathanschoreels}
+% \gitlab{gitlab-id}
+\stackoverflow{3833404}{jonathan-schoreels}
+\twitter{@JSchoreels}
+% \skype{jonathan.schoreels@gmail.com}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+% \quote{``Once you stop learning, you start dying."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {N-SIDE SA}
+  {Boulevard Baudouin 1er, 25\\B-1348 Louvain-La-Neuve\\Belgium}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application Letter : Software Solution Developer}
+% How the letter is opened
+\letteropening{Dear Mr. Parlongue,}
+% How the letter is closed
+\letterclosing{Thank you,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Jonathan Schoreels~~~·~~~Application Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I'm a passionate software engineer striving to constantly learn new skills and perfect the existing ones. Since I was a child, my curious mind pushed me towards Sciences and especially towards Physics and Mathematics, but it's with Computer Sciences that I finally fell in love when I had to choose my classes at the University of Mons. Even since the end of my Master Degree, I'm still continuing to read computer sciences books related to architecture, design \& innovative technologies. Combining passion and work is one of the various things that makes me enthusiastic, days after days. 
+
+\paragraph{}
+I'm specializing myself in Java technologies mostly due to its Open Source community and frameworks, which is a very important subject for me, as I'm curious to know how things work. I also have an affection for Functional Programming and Lambda calculus, that I've discovered with OCaml and that is more and more popular in JVM languages with Java 8 or Scala. I discovered Scala in Martin Odersky's class ``Functional Programming Principles in Scala'' on Coursera. 
+
+\lettersection{Why N-SIDE?}
+As a Computer Scientist, I sometimes feel that I don't use all the knowledge I learned in usual IT opportunities. For example, my skills and my love for Mathematics aren't often used for those. When I saw the different job descriptions available on your website, it instantly triggered my interest. I've applied here to the Software Solution Developer, but I'm confident that I can use more than my software engineering knowledge in the benefits of N-SIDE, such as Graphs and Networks, Computer Vision, Data-Mining \& Combinatorial Optimization. In conclusion, I have a strong belief that working together would be mutually beneficial.
+
+\lettersection{Why Me?}
+I'm often described as someone passionate, and I like to describe it as an inner fire that always pushes me further. I'm however aware that passion must be canalized to not backfire, so I take time to cautiously and methodically think about what to learn and how to prioritize my goals. I'm also a quick learner, autodidact and when I acquire knowledge I love to share it in my turn. That would make me a strong asset for N-SIDE since I could ``soak up'' lot of your experts' knowledge and then redistribute it afterward. In conclusion, I would say my confidence isn't about believing to know everything but about being able to learn anything.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
